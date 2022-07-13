@@ -60,4 +60,4 @@ Ceo projekat je moguće posmatrati umesto iz ugla regresije iz ugla klasifikacij
 
 
 Andrijana Živić
-Jul, 2021.
+Jul, 2022.
