@@ -14,11 +14,11 @@ Podaci koji su korišćeni preuzeti su sa Kaggle-a i dostupni su na sledećem li
 ### Predvidjanje:
 Za određivanje train i test skupa, podešavanja random state-a, kreiranje modela i predikciju rezultata korišćena je vision biblioteka. Zadatak se svodi na problem regresije kako bi se odredile tačne predviđene godine. Korišćene su samo dve epohe, sa learning rate-om 1e-4. Nakon toga isti je postupak ponovljen radi postizanja boljih rezultata. Prediktor nad većim podacima može biti sačuvan uz pomoć komande:
 
-**predictor.save("naziv_foldera_prediktora")
+**predictor.save("naziv_foldera_prediktora")**
 
 i učitan ponovo uz pomoć komande: 
 
-**(predictor = ktrain.load_predictor('naziv_foldera_prediktora')
+**(predictor = ktrain.load_predictor('naziv_foldera_prediktora')**
 
 Ovaj projekat je previše malih razmera da bi bilo potrebno čuvati prediktor i sve epohe se izvršavaju svega nekoliko minuta dok je za originalan dataset potrebno oko 14 sati.
 
@@ -60,4 +60,4 @@ Ceo projekat je moguće posmatrati umesto iz ugla regresije iz ugla klasifikacij
 
 
 _Andrijana Živić
-_Jul, 2022.
+Jul, 2022._
