@@ -25,12 +25,13 @@ Ovaj projekat je previše malih razmera da bi bilo potrebno čuvati prediktor i 
 ### Prikaz rezultata: 
 Funkcija show_pred za unet naziv fotografije prikazuje fotografiju sa zaokruženim rezultatima predviđanja i realnim podacima.
 
-Primer:
+
 ![Screenshot from 2022-07-13 14-09-07](https://user-images.githubusercontent.com/46380340/178732482-28c58fd5-3d36-4251-8eaa-2973d731b6eb.png)
 
 Svi predviđeni i realni podaci, zajedno sa nazivima fotografija čuvaju se u dataframe-u uz pomoć funkcije calculate_predictions i python-ove ugrađene funkcije map. (map omogućava brzo izvršavanje te je pogodan za rad i sa originalnim datasetom)
 
 ### Cenzura: 
+
 Ukoliko je lice po predviđenim godinama maloletno, njegovo lice će biti zamagljeno Gausovom metodom.
 
 ![Screenshot from 2022-07-13 14-11-13](https://user-images.githubusercontent.com/46380340/178732490-675c601a-eae4-4cd4-8760-eefe15890ee7.png)
@@ -53,4 +54,10 @@ koja prikazuje relativno mali stepen greške pri predviđanju.
 
 Kako bi model pravio manje grešaka potrebno je uključiti znatno veći broj podataka (fotografija) nad kojima bi učila mreža, svih godina. Ovaj projekat predstavlja samo kostur uspešnog projekta. Takođe, bilo bi neophodno povećati broj epoha. 
 Potencijalna dodatna unapređenja bi se ogledala u optimizaciji krajnjeg modela (u zavisnosti od toga za koju je meru evaluacije važnije dobiti bolji rezultat) i potencijalnom optimizacijom learning rate-a.
+
 Ceo projekat je moguće posmatrati umesto iz ugla regresije iz ugla klasifikacije, gde bi jedna klasa predstavljala maloletna lica a druga punoletna lica, te ovaj način u nekim slučajevima može potencijalno dati bolje rezultate.
+
+
+
+Andrijana Živić
+Jul, 2021.
