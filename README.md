@@ -2,4 +2,6 @@
 
 Ideja projekta jeste predviđanje starosti osobe na osnovu fotografije i cenzura fotografija maloletnih osoba (blur). Ovakav projekat se može nadograditi i koristiti u mnoge svrhe.
 
-Za predviđanje starosti osobe korišćena je konvolutivna neuronska mreža resnet50 koja se pokazala veoma uspešnom kada su pitanju biometrijske tehnologije, odnosno prepoznavanja lica. 
+Za predviđanje starosti osobe korišćena je konvolutivna neuronska mreža resnet50 koja se pokazala veoma uspešnom kada su pitanju biometrijske tehnologije, odnosno prepoznavanja lica. Realizacija je sprovedena uz pomoć wrapper-a ktrain koji se zasniva TensorFlow (Keras) i služi kao pomoć u izgradnji, obuci i primeni neuronskih mreža i drugih modela mašinskog učenja. Inspirisan proširenjima ML okvira kao što su FastAI i Ludvig, ktrain je dizajniran da učini duboko učenje i veštačku inteligenciju pristupačnijom i lakšom za primenu. Detaljnije informacije i uputstva za instalaciju: https://github.com/amaiya/ktrain.
+
+Podaci koji su korišćeni preuzeti su sa Kaggle-a i dostupni su na sledećem linku: https://www.kaggle.com/datasets/jangedoo/utkface-new. UTKFace je veliki skup fotografija sa rasponom starosti od 0 do 116 godina, dok je za potrebe ovog projekta taj raspon smanjen od 0 do 43 godine. Originalan skup podataka se sastoji od preko 20.000 slika lica sa napomenama o starosti, polu i etničkoj pripadnosti, dok je za izradu ovog projekta korišćeno 103 nasumično odabrane fotografije. Fotografije pokrivaju velike varijacije u pozi, izrazu lica, osvetljenju, okluziji i rezoluciji.
